@@ -1,0 +1,3 @@
+[submodule "vendor/vocbook-fetch"]
+	path = vendor/vocbook-fetch
+	url = git@github.com:klavogonki-dev/vocbook-fetch.git
