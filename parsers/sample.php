@@ -3,6 +3,8 @@
 use vocbook\BookPart;
 /**
  * @file Simple example of a split-book function.
+ * Copy the file into project root directory as "parser.php"
+ * 
  * @author Vitaliy Busko <vitaliy.opensource@gmail.com>
  */
 
