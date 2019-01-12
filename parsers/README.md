@@ -1,0 +1,1 @@
+The directory includes several split-book implementation functions. Copy any file into root of the repository as `parser.php`.
