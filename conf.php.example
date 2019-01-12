@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file Config file. Copy this file as `./conf.php` to apply settings.
+ * 
+ * Available config params:
+ * - `data` (string) path to storage directory
+ * 
+ * @author Vitaliy Busko <vitaliy.opensource@gmail.com>
+ */
+
+$cfg_local = [
+	'data' => realpath(__DIR__ . "/data")
+];
