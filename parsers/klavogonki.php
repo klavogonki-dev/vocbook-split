@@ -2,7 +2,7 @@
 /**
  * @file Actual function for parse books on klavogonki.ru
  */
-$parse = function ($sr, callable $add, $flags = BookFlag::BOOK_NONE) {
+$parse = function ($sr, callable $add, $flags = BookFlag::NONE) {
 	$text = stream_get_contents($sr);
 
 	if (substr($text, 0, 3) == chr(239).chr(187).chr(191))

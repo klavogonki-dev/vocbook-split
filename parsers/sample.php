@@ -35,7 +35,7 @@ use vocbook\BookPart;
  * voc properties and other
  * @return void
  */
-$parse = function ($sr, callable $add, $flags = BookFlag::BOOK_NONE) {
+$parse = function ($sr, callable $add, $flags = BookFlag::NONE) {
 	$segment_length = 200; // minimum length of a segment (book part)
 	$count = 0; // count of current segment (book part) symbols
 	$segment_number = 0; // counter: current part
