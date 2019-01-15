@@ -38,7 +38,7 @@ use vocbook\BookPart;
 $parse = function ($sr, callable $add, $flags = BookFlag::NONE) {
 	$segment_length = 200; // minimum length of a segment (book part)
 	$count = 0; // count of current segment (book part) symbols
-	$segment_number = 0; // counter: current part
+	$segment_number = 0; // counter: current segment number
 	$segment = ''; // text of the current segment
 
 	while (false !== ($c = fgetc($sr))) {
@@ -46,8 +46,9 @@ $parse = function ($sr, callable $add, $flags = BookFlag::NONE) {
 		// Adds the segment if we found a dot symbol and
 		// the segment include great then `$segment_length` symbols.
 		if ($count++ > $segment_length && $c === '.') {
-			$count = 0;
 			$add($segment, ++$segment_number); // call with two arguments
+			$count = 0;
+			$segment = '';
 		}
 	}
 
