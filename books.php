@@ -27,5 +27,12 @@ $books = [
 	// 	"id" => realpath("/home/Fenex/Downloads/starkov_1-utf-8.txt"),
 	// 	"author" => "Сергей Абрамов",
 	// 	"title" => "В лесу прифронтовом"
-	// ]
+	// ],
+    // Example for Windows, PHP <= 7.0 and cyrillic in path:
+    // [
+    // 	'driver' => 'local',
+    // 	'id' => realpath(mb_convert_encoding('C:\Книги\Название по-русски.txt', 'cp1251', 'utf-8')),
+    // 	'author' => 'Автор',
+    // 	'title' => 'Название книги'
+    // ]
 ];
